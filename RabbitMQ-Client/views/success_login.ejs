@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Successful Login</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="row">
+		<div class="col-md-12">
+			<form action="logout" method="post">
+				<h2>Logged in successfully</h2>
+				<br><br>
+				<div class="row">
+					<div class="col-md-3">
+						<b>email:</b> <%= email_id %>
+					</div>
+					<div class="col-md-3">
+					</div>
+				</div>	<br>
+				<div class="row">
+					<div class="col-md-3">
+						<b>first name:</b> <%= first_nm %>
+					</div>
+					<div class="col-md-3">
+					</div>
+				</div>	<br>
+				<div class="row">
+					<div class="col-md-3">
+						<b>last name:</b> <%= last_nm %>
+					</div>
+					<div class="col-md-3">
+					</div>
+				</div>	<br>
+				
+			</form>
+		</div>
+	</div>
+</body>
+</html>
