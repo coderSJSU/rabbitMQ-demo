@@ -39,8 +39,8 @@ function after_sign_in(req,res)
 				console.log("valid Login");
 				
 				req.session.first_nm = results.firstname;
-				req.session.last_nm = user.lastname;
-				req.session.email_id = user.emailid;
+				req.session.last_nm = results.lastname;
+				req.session.email_id = results.emailid;
 //				json_responses = {"login":"Success", };
 				console.log("valid Login2");
 				res.send({"login":"Success"});
